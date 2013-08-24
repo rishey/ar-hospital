@@ -1,5 +1,6 @@
 require 'rake'
 require 'rspec/core/rake_task'
+require 'debugger'
 
 require_relative 'config/application'
 
@@ -26,6 +27,7 @@ end
 
 desc "populate the test database with sample data"
 task "db:seed" do
+p APP_ROOT.join('db', 'seeds.rb')
   require APP_ROOT.join('db', 'seeds.rb')
 end
 
