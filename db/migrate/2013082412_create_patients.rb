@@ -16,3 +16,4 @@ class CreatePatients < ActiveRecord::Migration
     add_index :patients, :first_name
   end
 end
+

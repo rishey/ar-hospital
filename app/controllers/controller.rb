@@ -1,13 +1,7 @@
 require_relative '../models/patient.rb'
 
 
-def list
-  Patient.all
-end
 
-def find_by_last_name(args)
-  patient = Patient.where(args).take!
-end
 
 
 # def delete(task_id)

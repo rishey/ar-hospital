@@ -3,7 +3,7 @@ require_relative '../app/models/patient.rb'
 
 # Patient.create(:name => "Patient")
 
-100.times do 
+1000.times do 
   Patient.create(:first_name => Faker::Name.first_name,
               :last_name => Faker::Name.last_name,
               :address1 => Faker::Address.street_address,#(include_secondary = true),
